@@ -31,6 +31,8 @@ class TidalLane {
         myCanvas.setAttribute("style", `background-color: #555;width:${canvasWidth}px;height:${canvasHeight}px`);
         myCanvas.style.position = "absolute";
         canvasArea.style.position = "relative";
+        //清空子元素
+        canvasArea.innerHTML = '';
         canvasArea.appendChild(myCanvas);
         this.ctx = myCanvas.getContext("2d");
         window.addEventListener("resize", resizeCanvas, false);
