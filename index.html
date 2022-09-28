@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #tidalLane{
+        width: 400px;
+        height: 300px;
+    }
+</style>
+<body>
+    <div id="tidalLane"></div>
+    <script src="tidalLane.js"></script>
+    <script>
+        const roadList = [{
+                type: "bottom",
+                tidal: false,
+            },
+            {
+                type: 'top',
+                tidal: true,
+            },
+            {
+                type: 'top',
+                tidal: true,
+            },
+            {
+                type: 'bottom',
+                tidal: false,
+            },
+            {
+                type: 'bottom',
+                tidal: false,
+            },
+            {
+                type: 'bottom',
+                tidal: false,
+            },
+        ]
+        const tidalLane = new TidalLane('tidalLane', roadList)
+
+        //更新
+        setTimeout(() => {
+            const tempRoadList = [{
+                    type: "bottom",
+                    tidal: false,
+                },
+                {
+                    type: 'top',
+                    tidal: false,
+                },
+                {
+                    type: 'top',
+                    tidal: true,
+                },
+                {
+                    type: 'bottom',
+                    tidal: false,
+                },
+                {
+                    type: 'top',
+                    tidal: false,
+                },
+                {
+                    type: 'bottom',
+                    tidal: false,
+                },
+
+            ]
+            //更新潮汐车道
+            tidalLane.setRoadList(tempRoadList)
+        }, 3000)
+    </script>
+</body>
+
+</html>
