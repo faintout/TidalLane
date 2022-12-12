@@ -2,7 +2,9 @@
 
 <h1 align="center">TidalLane</h1>
 
-
+<p align="center">
+  <a href="https://www.npmjs.com/package/@faintout/tidal-lane"><img src="https://img.shields.io/npm/v/vue.svg?sanitize=true" alt="Version"></a>
+</p>
 ### 基于JS+Canvas开发车道线+潮汐车道绘制。
 
 - 支持车道线、潮汐车道、行进方向、潮汐车道文字显示。
