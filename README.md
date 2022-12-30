@@ -1,7 +1,7 @@
 [ENGLISH](./README.md)
 
 <h1 align="center">TidalLane</h1>
-[NPM](https://nodei.co/npm/@faintout/tidal-lane.png)](https://npmjs.org/package/@faintout/tidal-lane)
+[![NPM](https://nodei.co/npm/@faintout/tidal-lane.png)](https://npmjs.org/package/@faintout/tidal-lane)
 
 ### 基于JS+Canvas开发车道线+潮汐车道绘制。
 
